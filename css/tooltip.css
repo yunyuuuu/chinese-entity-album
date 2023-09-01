@@ -10,7 +10,7 @@ div.tooltip{
     pointer-events: none;
     visibility: hidden;
     transition: top 250ms ease-in-out, left 250ms ease-in-out;
-    transform: translate(0%, -100%);
+    transform: translate(0%, 100%);
 }
 
 div.tooltip.is-right{
