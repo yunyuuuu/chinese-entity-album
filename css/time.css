@@ -1,0 +1,58 @@
+#time {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding-top: 2rem;
+}
+
+#time .figure--chart {
+    margin: 0 auto;
+    transform: translate3d(0, 0, 0);
+    height: 100vh;
+}
+
+#time {
+    font-size: small;
+}
+
+#time svg {
+    margin: 0 auto;
+    display: block;
+}
+
+#time svg .zoom{
+    fill: transparent;
+    opacity: 0;
+    stroke: #aaa;
+}
+
+#time svg .zoom-bar{
+    opacity: 0;
+}
+
+#time svg .tipLine{
+    opacity: 0;
+}
+
+#time svg .is-show{
+    opacity: 1;
+}
+
+#time svg .is-scale{
+    transform: scale(1.2)
+}
+
+#time svg .is-scale2{
+    transform: scale(1.1)
+}
+
+div.prose{
+    margin: 3rem auto;
+    max-width: 40rem;
+    font-weight: 400;
+    font-size: large;
+    text-align: left;
+    margin-bottom: 2rem;
+    line-height: 2;
+}

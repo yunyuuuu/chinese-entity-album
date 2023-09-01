@@ -1,0 +1,31 @@
+#things{
+    background-color: white;
+    /* margin-top: -17px; */
+    padding-top: 0.5rem;
+}
+
+#things figure{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+#things #container{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+#things #container #hideCanvas{
+    display: none;
+}
+
+/* #method{
+    background-color: #ddd;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#method div{
+    margin: 0 auto;
+    max-width: 40rem;
+    font-size: medium;
+} */

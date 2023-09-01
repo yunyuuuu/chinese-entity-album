@@ -1,0 +1,176 @@
+#price {
+    background-color: white;
+    margin: 0 auto;
+    /* margin-top: -16px; */
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+#price figure {
+    padding-top: 0.7rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+#price figure.is-truncated {
+    max-height: 40.5rem;
+    overflow: hidden;
+    /* margin-top: 5rem; */
+}
+
+#price .current {
+    fill: #cf3759;
+}
+
+#price .dumbbell {
+    font-family: "Arial Black";
+    font-size: 12px;
+}
+
+#price .dumbbellGroup .mean {
+    stroke-width: 1;
+    opacity: 0.7;
+    stroke-dasharray: 0.35%;
+}
+
+#price .dumbbellGroup .med_dig {
+    stroke: #85b7ce;
+    opacity: 0.9;
+}
+
+#price .dumbbellGroup .med_ent {
+    stroke: #cf3759;
+}
+
+#price .future {
+    fill: #85b7ce;
+}
+
+#price line.between {
+    /* stroke: #ffbcaf; */
+    stroke-width: 3;
+}
+
+#price .axis text {
+    font: 10px sans-serif;
+}
+
+#price figure svg g.x.axis path {
+    display: none;
+    text-align: center;
+}
+
+#price figure .figure__tips {
+    margin-left: 20%;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#price figure .figure__tips div {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+}
+
+#price figure .figure__tips div p {
+    display: inline-block;
+    max-width: 108px;
+    margin: 0;
+}
+
+#price figure .figure__tips div img {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    margin-right: 0.3rem;
+}
+
+#price .toggle-table {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#price .toggle-table .btn {
+    /* font-size: 12px; */
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0.25em 1em;
+    width: 6rem;
+    font-weight: 600;
+    transition: background-color 250ms;
+    text-indent: 0.75rem;
+    letter-spacing: 0.75rem;
+    margin-top: 0;
+}
+
+#price .toggle-table .btn:hover {
+    background-color: rgba(91, 91, 91, 0.2)
+}
+
+#price .show-more {
+    position: absolute;
+    width: 100%;
+    height: 5rem;
+    background: linear-gradient(rgba(255,255,255,0), rgba(255, 255, 255, 1));
+    bottom: 0;
+    visibility: hidden;
+}
+
+#price .show-more.is-visible {
+    visibility: visible;
+}
+
+/* 适配 */
+@media screen and (max-width: 870px) {
+
+    #price .dumbell .text.current,
+    .text.future {
+        display: none;
+    }
+
+    #price .dumbell .text.future,
+    .text.current {
+        display: none;
+    }
+
+    #price .x.axis line {
+        color: #aaa;
+        stroke-dasharray: 0.35%;
+    }
+
+    #price .y.axis path {
+        display: none;
+    }
+
+    #price .y.axis line {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    #price figure .figure__tips {
+        margin-left: 20%;
+        margin-bottom: 25px;
+    }
+
+    #price figure .figure__tips div {
+        display: block;
+        font-size: 12px;
+        margin-right: 2%;
+        text-align: center;
+    }
+
+    #price figure .figure__tips div p {
+        max-width: 108px;
+        margin: 0;
+    }
+
+    #price figure .figure__tips div img {
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+    }
+}
