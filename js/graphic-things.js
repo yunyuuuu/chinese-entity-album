@@ -77,8 +77,6 @@ function dataBind() {
         y0: dic.nodes.filter(p => p.name == d.target)[0].y0
     }))
 
-    console.log(linksData2)
-
     const rPrice = d3.scaleLinear().domain(d3.extent(singerData, d => d.entity_price)).nice().range([3, 17]);
     const rThings = d3.scaleLinear().domain([0, count['CD']]).range([3, 17])
 
