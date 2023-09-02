@@ -4,6 +4,7 @@ import graphicOverview from './graphic-overview.js';
 import graphicTime from './graphic-time.js';
 import graphicPrice from './graphic-price.js';
 import graphicThings from './graphic-things.js';
+import preloadImages from './preload-image.js';
 
 const $body = d3.select('body');
 let previousWidth = 0;
@@ -33,6 +34,7 @@ function init() {
 		graphicTime.init(singerData);
 		graphicPrice.init(singerData);
 		graphicThings.init(singerData);
+		preloadImages(singerData);
 	})
 	// .catch(function (error) {
 	// 	reject(error);
