@@ -14,7 +14,7 @@ div.tooltip{
 }
 
 div.tooltip.is-right{
-    transform: translate(-90%, -100%);
+    transform: translate(-90%, 100%);
 }
 
 div.tooltip.is-bottom{
